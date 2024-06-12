@@ -26,6 +26,7 @@ Features
 
 -Calorie Warning: Displays a warning if the total calories exceed a specified threshold.
 
+
 here is how the code works
 
 Main Window -Recipe Name: Enter the name of the recipe.
@@ -48,11 +49,15 @@ Main Window -Recipe Name: Enter the name of the recipe.
 
 -Filters: Apply filters based on ingredient name, food group, and maximum calories.
 
+
 Code Structure XAML The MainWindow.xaml file defines the user interface components including labels, text boxes, buttons, and combo boxes. It uses a Grid layout with several RowDefinition elements to organize the UI elements.
 
 C# The MainWindow.xaml.cs file contains the logic for handling user interactions, managing recipe details, scaling recipes, and applying filters.
 
-Key Classes and Methods -MainWindow: The main window class that initializes the application and handles various button click events.
+
+Key Classes and Methods
+
+-MainWindow: The main window class that initializes the application and handles various button click events.
 
 -recipeDetails: A class to store and manage recipe details including ingredients, steps, and scaling functionality.
 
