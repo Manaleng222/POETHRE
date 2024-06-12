@@ -1,5 +1,7 @@
 # POETHRE
-POE 
+POE
+
+
 
 The Recipe Manager application is a WPF-based tool designed to help users create, manage, and scale recipes efficiently.
 The application provides functionalities to input recipe details, add ingredients, specify steps, scale recipe quantities, filter recipes, and delete recipes.
@@ -10,7 +12,7 @@ Features
 
 -Add Ingredients: Additional ingredients can be added to an existing recipe.
 
--Add Steps: Users can specify the steps required to prepare the recipe name.
+-Add Steps: Users can specify the steps required to prepare the recipe.
 
 -Scale Recipes: Recipes can be scaled by 0.5, 2, or 3 times their original quantities.
 
@@ -24,11 +26,9 @@ Features
 
 -Calorie Warning: Displays a warning if the total calories exceed a specified threshold.
 
+here is how the code works
 
-here is  how the code works
-
-Main Window
--Recipe Name: Enter the name of the recipe.
+Main Window -Recipe Name: Enter the name of the recipe.
 
 -Enter Ingredient: Input the ingredient details including name, measurement, quantity, food group, and calories.
 
@@ -48,16 +48,11 @@ Main Window
 
 -Filters: Apply filters based on ingredient name, food group, and maximum calories.
 
-Code Structure
-XAML
-The MainWindow.xaml file defines the user interface components including labels, text boxes, buttons, and combo boxes. 
-It uses a Grid layout with several RowDefinition elements to organize the UI elements.
+Code Structure XAML The MainWindow.xaml file defines the user interface components including labels, text boxes, buttons, and combo boxes. It uses a Grid layout with several RowDefinition elements to organize the UI elements.
 
-C#
-The MainWindow.xaml.cs file contains the logic for handling user interactions, managing recipe details, scaling recipes, and applying filters.
+C# The MainWindow.xaml.cs file contains the logic for handling user interactions, managing recipe details, scaling recipes, and applying filters.
 
-Key Classes and Methods
--MainWindow: The main window class that initializes the application and handles various button click events.
+Key Classes and Methods -MainWindow: The main window class that initializes the application and handles various button click events.
 
 -recipeDetails: A class to store and manage recipe details including ingredients, steps, and scaling functionality.
 
@@ -82,3 +77,5 @@ Key Classes and Methods
 -check_Click: Applies filters based on ingredient name, food group, and maximum calories.
 
 
+
+The programm is user friendly
