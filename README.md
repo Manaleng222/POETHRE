@@ -10,7 +10,7 @@ Features
 
 -Add Ingredients: Additional ingredients can be added to an existing recipe.
 
--Add Steps: Users can specify the steps required to prepare the recipe.
+-Add Steps: Users can specify the steps required to prepare the recipe name.
 
 -Scale Recipes: Recipes can be scaled by 0.5, 2, or 3 times their original quantities.
 
