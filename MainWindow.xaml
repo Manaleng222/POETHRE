@@ -111,7 +111,7 @@
             
         </StackPanel>
         
-        <Label Grid.Row="7" Content="Current List of Recipes (Press Ctrl + Spacebar to Unselect item):" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Grid.Row="7" Content="Current List of Recipes:" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold"/>
         <ListBox Grid.Row="8"  x:Name="list" Width="Auto" Height="Auto" BorderThickness="2">
             <ListBox.ItemContainerStyle>
                 <Style TargetType="ListBoxItem">

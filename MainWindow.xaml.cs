@@ -55,7 +55,7 @@ namespace POETHRE
                 CheckerCalories((int)double.Parse(carl.Text));
 
 
-
+                
                 //ingredient.Clear();
                 //measure.Clear();
                 //qty.Clear();
@@ -128,7 +128,7 @@ namespace POETHRE
         // Display the recipe details button
         private void displayButton_Click(object sender, RoutedEventArgs e)
         {
-            var sortedRecipeDetails = recipeDetail.OrderBy(a => a.itemName).ToList();
+            var sortedRecipeDetails = recipeDetail.OrderBy(a => a.Name).ToList();
 
 
             // Display the recipe details in a message box
@@ -171,7 +171,7 @@ namespace POETHRE
 
             foreach (recipeDetails recipe in recipeDetail)
             {
-                message.AppendLine($"The Quantity: {recipe.itemQuantity}\nThe Measurement: {recipe.itemMeasurement}\nThe name of recipe: {recipe.recipeName}");
+                message.AppendLine($"The Quantity: {recipe.Quantity}\nThe Measurement: {recipe.Measurement}\nThe name of recipe: {recipe.recipeName}");
             }
 
             MessageBox.Show(message.ToString(), "Scaled Recipe Quantity");
@@ -197,7 +197,7 @@ namespace POETHRE
 
             foreach (recipeDetails recipe in recipeDetail)
             {
-                message.AppendLine($"The Quantity: {recipe.itemQuantity}\nThe Measurement: {recipe.itemMeasurement}\nThe name of recipe: {recipe.recipeName}");
+                message.AppendLine($"The Quantity: {recipe.Quantity}\nThe Measurement: {recipe.Measurement}\nThe name of recipe: {recipe.recipeName}");
             }
 
             MessageBox.Show(message.ToString(), "Scaled Recipe Quantity");
@@ -222,7 +222,7 @@ namespace POETHRE
 
             foreach (recipeDetails recipe in recipeDetail)
             {
-                message.AppendLine($"The Quantity: {recipe.itemQuantity}\nThe Measurement: {recipe.itemMeasurement}\nThe name of recipe: {recipe.recipeName}");
+                message.AppendLine($"The Quantity: {recipe.Quantity}\nThe Measurement: {recipe.Measurement}\nThe name of recipe: {recipe.recipeName}");
             }
 
             MessageBox.Show(message.ToString(), "Scaled Recipe Quantity");
@@ -248,7 +248,7 @@ namespace POETHRE
 
                 foreach (recipeDetails recipe in recipeDetail)
                 {
-                    message.AppendLine($"- The Quantity: {recipe.itemQuantity}\nThe Measurement: {recipe.itemMeasurement}\nThe name of recipe: {recipe.recipeName}");
+                    message.AppendLine($"- The Quantity: {recipe.Quantity}\nThe Measurement: {recipe.Measurement}\nThe name of recipe: {recipe.recipeName}");
                 }
 
                 MessageBox.Show(message.ToString(), "Recipe Quantities");
@@ -283,7 +283,7 @@ namespace POETHRE
             string ingredient = ingredientFilterTextBox.Text;
 
             var filteredRecipes = recipeDetail
-                .Where(recipe => recipe.itemName.Contains(ingredient, StringComparison.OrdinalIgnoreCase))
+                .Where(recipe => recipe.Name.Contains(ingredient, StringComparison.OrdinalIgnoreCase))
                 .ToList();
 
             // Filter by Food Group
@@ -338,9 +338,9 @@ namespace POETHRE
             //Public class to store recipe details
 
             //Variables to store ingredients 
-            public string itemName;
-            public string itemMeasurement;
-            public double itemQuantity;
+            public string Name;
+            public string Measurement;
+            public double Quantity;
             public string recipeName;
             public string recipeDescription;
             public string foodGroup;
@@ -349,15 +349,15 @@ namespace POETHRE
 
             private readonly double originalQuantity;
 
-            public recipeDetails(string itemName, string itemMeasurement, double itemQuantity, string recipeName, string recipeDescription, string foodGroup, double Carlories, List<string> steps)
+            public recipeDetails(string name, string measurement, double quantity, string recipeName, string recipeDescription, string foodGroup, double Carlories, List<string> steps)
             {
                 //Constructor for ingredients
-                this.itemName = itemName;
-                this.itemMeasurement = itemMeasurement;
-                this.itemQuantity = itemQuantity;
+                this.Name = name;
+                this.Measurement = measurement;
+                this.Quantity = quantity;
                 this.recipeName = recipeName;
                 this.recipeDescription = recipeDescription;
-                originalQuantity = itemQuantity;
+                originalQuantity = quantity;
                 this.foodGroup = foodGroup;
                 this.Carlories = Carlories;
                 Steps = steps; 
@@ -366,19 +366,19 @@ namespace POETHRE
             public void recipeScaling(double scaleBy)
             {
                 //Method to scale recipe quantity
-                itemQuantity = originalQuantity * scaleBy;
+                Quantity = originalQuantity * scaleBy;
             }
 
             public void resetRecipe()
             {
                 //Method to reset quantity
-                itemQuantity = originalQuantity;
+                Quantity = originalQuantity;
             }
 
             //Display recipe info
             public override string ToString()
             {
-                return $"Recipe name: {recipeName}\n Ingredient name:{itemName}\n Measurement:{itemMeasurement}\n Quantity:{itemQuantity}\nCarlories:{Carlories}\nFoodGroup:{foodGroup}\nSteps: {string.Join("\n", Steps)}\n*************8**";
+                return $"Recipe name: {recipeName}\n Ingredient name:{Name}\n Measurement:{Measurement}\n Quantity:{Quantity}\nCarlories:{Carlories}\nFoodGroup:{foodGroup}\nSteps: {string.Join("\n", Steps)}\n*************8**";
 
             }
         }
