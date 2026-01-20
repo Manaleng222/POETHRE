@@ -1,9 +1,5 @@
 <!-- PROJECT BADGES -->
-<p align="center">
-  <img src="https://img.shields.io/badge/.NET‑WPF‑Blue?logo=dotnet" alt=".NET WPF Badge" />
-  <img src="https://img.shields.io/badge/Language‑C%23‑purple?logo=csharp" alt="C# Badge" />
-  <img src="https://img.shields.io/badge/License‑MIT‑green" alt="License Badge" />
-</p>
+
 
 # 🍲 POETHRE  
 ## 📌 Recipe Manager Application (WPF Desktop App)
@@ -63,4 +59,5 @@ User actions (add/edit/filter/scale) are processed by backend logic in C#, and t
 1. **Clone the repository:**  
    ```bash
    git clone https://github.com/Manaleng222/POETHRE.git
+
 
