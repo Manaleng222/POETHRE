@@ -1,99 +1,66 @@
-# POETHRE
-POE
+<!-- PROJECT BADGES -->
+<p align="center">
+  <img src="https://img.shields.io/badge/.NET‑WPF‑Blue?logo=dotnet" alt=".NET WPF Badge" />
+  <img src="https://img.shields.io/badge/Language‑C%23‑purple?logo=csharp" alt="C# Badge" />
+  <img src="https://img.shields.io/badge/License‑MIT‑green" alt="License Badge" />
+</p>
 
+# 🍲 POETHRE  
+## 📌 Recipe Manager Application (WPF Desktop App)
 
+**POETHRE** is a Windows Desktop recipe management application built with **C# and WPF (.NET)**.  
+It allows users to create, scale, view, filter, and delete recipes with ease — all through a clean, interactive interface.
 
-The Recipe Manager application is a WPF-based tool designed to help users create, manage, and scale recipes efficiently.
-The application provides functionalities to input recipe details, add ingredients, specify steps, scale recipe quantities, filter recipes, and delete recipes.
+---
 
-Features
+## 🚀 Features
 
--Add Recipe: Users can input recipe names, ingredients, measurements, quantities, food groups, and calories.
+### 📋 Core Features
+- ✏️ **Add New Recipes**  
+  Enter recipe name, ingredients, units, food groups, and calories.
+- ➕ **Add Multiple Ingredients & Steps**  
+  Build detailed ingredient lists and step‑by‑step instructions.
+- 📏 **Scale Recipe Quantities**  
+  Scale ingredients by *0.5×*, *2×*, or *3×* with a single click.
+- 🔄 **Reset Quantities**  
+  Restore original ingredient amounts.
+- 🗑 **Delete Recipes**  
+  Remove recipes from the list.
+- 🧠 **Filtering Options**
+  - Filter by ingredient name
+  - Filter by food group
+  - Filter by max calories
+- ⚠️ **Calorie Warning Alert**  
+  Automatic visual alert when calories exceed user thresholds.
 
--Add Ingredients: Additional ingredients can be added to an existing recipe.
+---
 
--Add Steps: Users can specify the steps required to prepare the recipe.
+## 🧠 How It Works
 
--Scale Recipes: Recipes can be scaled by 0.5, 2, or 3 times their original quantities.
+This is a **WPF desktop application** — no web server or browser required.  
+User actions (add/edit/filter/scale) are processed by backend logic in C#, and the UI updates accordingly.
 
--Reset Quantities: Recipe quantities can be reset to their original values.
+✔ UI built with **WPF XAML**  
+✔ In‑memory list for storing recipes at runtime  
+✔ Detailed filtering and scaling logic for enhanced usability
 
--Delete Recipes: Users can delete selected recipes.
+---
 
--Display Recipes: Displays a list of current recipes and their details.
+## 🛠 Technology Stack
 
--Filter Recipes: Filter recipes by ingredient name, food group, and maximum calories.
+| Component | Technology |
+|-----------|------------|
+| Language | C# |
+| Framework | .NET (WPF Desktop) |
+| UI | WPF (XAML) |
+| Development | Visual Studio |
+| Deployment | Standalone Windows App |
 
--Calorie Warning: Displays a warning if the total calories exceed a specified threshold.
+---
 
+## 📁 Installation & Setup
 
-here is how the code works
+1. **Clone the repository:**  
+   ```bash
+   git clone https://github.com/Manaleng222/POETHRE.git
 
-
-Main Window 
-
-
--Recipe Name: Enter the name of the recipe.
-
--Enter Ingredient: Input the ingredient details including name, measurement, quantity, food group, and calories.
-
--Add More Ingredient: Clear ingredient fields to add another ingredient to the same recipe.
-
--Enter Steps: Input the number of steps and add them by clicking the Add Steps button.
-
--Save Recipe: Save the recipe with all the entered details.
-
--Display: Display the list of all recipes with their details.
-
--Scaling Buttons: Scale the recipe quantities by 0.5, 2, or 3.
-
--Reset: Reset the recipe quantities to their original values.
-
--Delete Recipe: Delete the selected recipe.
-
--Filters: Apply filters based on ingredient name, food group, and maximum calories.
-
-
-
-
-Code Structure XAML The MainWindow.xaml file defines the user interface components including labels, text boxes, buttons, and combo boxes. It uses a Grid layout with several RowDefinition elements to organize the UI elements.
-
-C# The MainWindow.xaml.cs file contains the logic for handling user interactions, managing recipe details, scaling recipes, and applying filters.
-
-
-
-Key Classes and Methods
-
-
-
-
-
--MainWindow: The main window class that initializes the application and handles various button click events.
-
--recipeDetails: A class to store and manage recipe details including ingredients, steps, and scaling functionality.
-
--saveRecipeButton_Click: Saves the current recipe.
-
--AddIngredientButton_Click: Adds more ingredients to an existing recipe.
-
--AddSteps_Click: Adds steps to the recipe.
-
--displayButton_Click: Displays the current list of recipes.
-
--scaleButton1_Click: Scales recipe quantities by 0.5.
-
--scaleButton2_Click: Scales recipe quantities by 2.
-
--scaleButton3_Click: Scales recipe quantities by 3.
-
--resetButton_Click: Resets recipe quantities to their original values.
-
--deleteRecipeButton_Click: Deletes the selected recipe.
-
--check_Click: Applies filters based on ingredient name, food group, and maximum calories.
-
-
-
-
-
-The programm is user friendly
