@@ -100,14 +100,6 @@ User actions (add/edit/filter/scale) are processed by backend logic in C#, and t
 
 ---
 
-## 📈 Screenshots
-
-*(Optional — add your screenshots below if available)*
-
-![Main UI](./screenshots/main_ui.png)  
-![Add Recipe](./screenshots/add_recipe.png)
-
----
 
 ## 🤝 Author 
 Tshepiso Tshediso Manaleng
@@ -120,6 +112,7 @@ Tshepiso Tshediso Manaleng
 
 This project is licensed under the **MIT License**.  
 See the `LICENSE` file for details.
+
 
 
 
