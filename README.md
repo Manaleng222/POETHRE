@@ -60,4 +60,67 @@ User actions (add/edit/filter/scale) are processed by backend logic in C#, and t
    ```bash
    git clone https://github.com/Manaleng222/POETHRE.git
 
+   ```
+
+   ## Installation & Setup
+
+1. **Open the project in Visual Studio:**  
+   Double‑click `POETHRE.sln`
+
+2. **Build the solution:**  
+   Go to **Build > Build Solution** (or press `Ctrl + Shift + B`)
+
+3. **Run the application:**  
+   Press **F5** or click **Start**
+
+---
+
+## 🎯 How to Use
+
+### 👩‍🍳 Adding a Recipe
+
+- Enter basic details (name, food group, calories)
+- Add ingredients + measurements
+- Provide step‑by‑step instructions
+
+### 📏 Scaling a Recipe
+
+- Use scale buttons to adjust all ingredient amounts automatically
+
+### 🔍 Filtering Recipes
+
+- Search by ingredient
+- Select food group
+- Set max calories to refine results
+
+### 🗑 Deleting & Resetting
+
+- Remove unwanted recipes
+- Reset ingredient values with buttons
+
+---
+
+## 📈 Screenshots
+
+*(Optional — add your screenshots below if available)*
+
+![Main UI](./screenshots/main_ui.png)  
+![Add Recipe](./screenshots/add_recipe.png)
+
+---
+
+## 🤝 Author 
+Tshepiso Tshediso Manaleng
+
+
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+See the `LICENSE` file for details.
+
+
+
 
